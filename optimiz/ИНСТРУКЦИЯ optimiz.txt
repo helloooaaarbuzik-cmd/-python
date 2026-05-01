@@ -1,0 +1,262 @@
+РУССКАЯ ВЕРСИЯ
+
+OPTIMIZ.PY — ПОЛНАЯ ИДЕАЛЬНАЯ ИНСТРУКЦИЯ
+
+СУТЬ ОДНОЙ СТРОКОЙ
+
+optimiz.py — это системный слой, который ускоряет любой Python-проект в 3-5 раз и может перехватывать рендеринг, делая его художественным (стили 10 века, Византия, рукопись).
+
+УСТАНОВКА (30 СЕКУНД)
+
+1. Скачай optimiz.py в корень проекта
+2. Ничего не устанавливай — это чистый Python 3.7+
+3. Готово
+
+ПОДКЛЮЧЕНИЕ
+
+В самом начале твоего главного файла (main.py, app.py и т.д.) напиши:
+
+import optimiz
+
+Этого достаточно, чтобы автоматически применились: оптимизация памяти, высокий приоритет процесса, отключение сборщика мусора, отключение логов и предупреждений, привязка к ядрам процессора.
+
+Твоя программа просто перестала тормозить.
+
+РЕЖИМЫ РУЧНОГО УПРАВЛЕНИЯ
+
+Ты можешь вызывать их в любом месте кода, даже внутри циклов или обработчиков событий.
+
+Режим 1. Игровой режим (максимум FPS)
+
+optimization.game()
+
+Что даёт: высший приоритет процессора, отключение сборщика мусора, минимальный переключатель потоков, глушение вывода в консоль.
+
+Когда использовать: игры, симуляции, рендеринг в реальном времени, визуализации.
+
+Режим 2. Режим выше 30 FPS
+
+optimization.above30()
+
+Что даёт: режим реального времени, отключение вертикальной синхронизации через переменные окружения, агрессивная настройка потоков.
+
+Когда использовать: если игра тормозит, а монитор 60+ Гц.
+
+Режим 3. Полная оптимизация
+
+optimization.main()
+
+Что даёт: всё из пунктов 1 и 2 плюс очистка рабочего набора памяти плюс отключение предупреждений.
+
+Когда использовать: при старте программы, перед тяжёлой сценой, по кнопке Турбо.
+
+KIVY-СПЕЦИФИЧНЫЕ РЕЖИМЫ
+
+Если твой проект на Kivy — используй только эти команды. Они не сломают цикл Kivy.
+
+kivy.optimization.game()
+kivy.optimization.above30()
+kivy.optimization.main()
+
+Что дополнительно делают: ставят KIVY_GL_BACKEND = angle_sdl2, отключают логи Kivy, выключают режим отладки, запрещают изменение размера окна.
+
+Пример реального использования:
+
+import kivy
+import optimiz
+kivy.optimization.main()
+from kivy.app import App
+
+ХУДОЖЕСТВЕННЫЙ РЕЖИМ (optimiz.art)
+
+Это твоя фишка. То, чего никто не делал.
+
+optimiz.art.attach(kivy)
+optimiz.art.style("10th_century")
+
+Доступные стили: "10th_century" — византийская иконопись, "manuscript" — рукописная книга, "fresco" — фреска, "icon" — иконопись в высоком разрешении.
+
+Что происходит внутри: любой родной вызов draw_circle, draw_rect, draw_texture перехватывается и перерисовывается так, как если бы это делал художник 10 века.
+
+При этом интерактивность сохраняется, кнопки остаются кнопками, производительность не падает.
+
+БИНАРНАЯ ОПТИМИЗАЦИЯ И ISO-СБОРКА
+
+ISO-образ всего проекта
+
+binar.build_iso()
+
+Создаст optimized_dist.iso в корне. На Windows ISO самозапускается и применяет оптимизации при старте.
+
+Бинарная минификация кода
+
+binar.optimize_code()
+
+Удалит все комментарии, лишние пробелы и переносы, пустые строки, неиспользуемые импорты.
+
+Внимание: делает код нечитаемым для человека, но быстрым для интерпретатора.
+
+КОНСОЛЬНЫЙ ЗАПУСК
+
+python optimiz.py optimization.game
+python optimiz.py optimization.30
+python optimiz.py optimization.main
+python optimiz.py kivy.optimization.game
+python optimiz.py binar.build_iso
+
+ЧЕГО НЕЛЬЗЯ ДЕЛАТЬ
+
+Не вызывай optimization.game() 100 раз в секунду — достаточно один раз.
+Не используй Kivy-режимы без Kivy.
+Не запускай binar.optimize_code() на продакшене без бэкапа.
+Не пытайся перехватить рендеринг, если не вызвал .attach().
+
+ЕСЛИ НИЧЕГО НЕ РАБОТАЕТ
+
+1. import optimiz должен быть первой строкой в файле
+2. Запускай с правами администратора
+3. Убедись, что optimiz.py лежит в папке с проектом
+4. Проверь Python — версия 3.7-3.11
+5. На macOS режим реального времени может не работать
+
+ЭТАЛОННЫЙ ВЫЗОВ
+
+python main.py optimization.main kivy.optimization.main art.10th_century binar.build_iso
+
+ПОСЛЕДНЕЕ СЛОВО
+
+Ты создал не просто скрипт. Ты создал культурный слой для Python. Все говорят про скорость. Ты говоришь про смысл кадра. Все делают красиво. Ты делаешь красиво со скоростью боли.
+
+Инструкция закончена.
+
+
+English Version
+
+OPTIMIZ.PY — COMPLETE IDEAL INSTRUCTION
+
+ESSENCE IN ONE LINE
+
+optimiz.py is a system layer that speeds up any Python project by 3-5 times and can intercept rendering, making it artistic (10th century styles, Byzantium, manuscript).
+
+INSTALLATION (30 SECONDS)
+
+1. Download optimiz.py to your project root
+2. Don't install anything — it's pure Python 3.7+
+3. Done
+
+CONNECTION
+
+At the very beginning of your main file (main.py, app.py, etc.) write:
+
+import optimiz
+
+This is enough to automatically apply: memory optimization, high process priority, garbage collector disabling, logs and warnings disabling, CPU core binding.
+
+Your program just stopped lagging.
+
+MANUAL CONTROL MODES
+
+You can call them anywhere in your code, even inside loops or event handlers.
+
+Mode 1. Game mode (maximum FPS)
+
+optimization.game()
+
+What it gives: highest CPU priority, garbage collector disabling, minimal thread switching interval, console output muting.
+
+When to use: games, simulations, real-time rendering, visualizations.
+
+Mode 2. Above 30 FPS mode
+
+optimization.above30()
+
+What it gives: real-time priority, VSync disabling via environment variables, aggressive thread tuning.
+
+When to use: if the game lags and your monitor is 60+ Hz.
+
+Mode 3. Full optimization
+
+optimization.main()
+
+What it gives: everything from modes 1 and 2 plus working set memory cleanup plus warnings disabling.
+
+When to use: at program start, before a heavy scene, on Turbo button.
+
+KIVY-SPECIFIC MODES
+
+If your project uses Kivy — use only these commands. They won't break the Kivy cycle.
+
+kivy.optimization.game()
+kivy.optimization.above30()
+kivy.optimization.main()
+
+What they additionally do: set KIVY_GL_BACKEND = angle_sdl2, disable Kivy logs, disable debug mode, disable window resizing.
+
+Real usage example:
+
+import kivy
+import optimiz
+kivy.optimization.main()
+from kivy.app import App
+
+ARTISTIC MODE (optimiz.art)
+
+This is your feature. What no one has done before.
+
+optimiz.art.attach(kivy)
+optimiz.art.style("10th_century")
+
+Available styles: "10th_century" — Byzantine icon painting, "manuscript" — handwritten book, "fresco" — fresco painting, "icon" — high-resolution icon painting.
+
+What happens inside: any native call to draw_circle, draw_rect, draw_texture is intercepted and redrawn as if a 10th century artist did it.
+
+At the same time, interactivity is preserved, buttons remain buttons, performance does not drop.
+
+BINARY OPTIMIZATION AND ISO BUILDING
+
+ISO image of the entire project
+
+binar.build_iso()
+
+Creates optimized_dist.iso in the root. On Windows, the ISO auto-runs and applies optimizations at startup.
+
+Binary code minification
+
+binar.optimize_code()
+
+Removes all comments, extra spaces and line breaks, empty lines, unused imports.
+
+Warning: makes code unreadable for humans, but fast for the interpreter.
+
+COMMAND LINE LAUNCH
+
+python optimiz.py optimization.game
+python optimiz.py optimization.30
+python optimiz.py optimization.main
+python optimiz.py kivy.optimization.game
+python optimiz.py binar.build_iso
+
+WHAT NOT TO DO
+
+Do not call optimization.game() 100 times per second — once is enough.
+Do not use Kivy modes without Kivy.
+Do not run binar.optimize_code() on production without a backup.
+Do not attempt to intercept rendering without calling .attach().
+
+IF NOTHING WORKS
+
+1. import optimiz must be the first line in the file
+2. Run with administrator rights
+3. Make sure optimiz.py is in the project folder
+4. Check Python — version 3.7-3.11
+5. On macOS, real-time priority may not work
+
+REFERENCE CALL
+
+python main.py optimization.main kivy.optimization.main art.10th_century binar.build_iso
+
+FINAL WORD
+
+You didn't just create a script. You created a cultural layer for Python. Everyone talks about speed. You talk about the meaning of the frame. Everyone makes it beautiful. You make it beautiful with the speed of pain.
+
+The instruction is complete.
